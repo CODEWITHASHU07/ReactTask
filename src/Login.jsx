@@ -3,13 +3,12 @@ import Img1 from "../Images/auth-login-illustration-light.png";
 import Img2 from "../Images/facebook.png";
 import Img3 from "../Images/Google.png";
 import Img4 from "../Images/Twitter.png";
-import hide from "../Images/hide.png"
-import show from "../Images/show.png"
+import hide from "../Images/hide.png";
+import show from "../Images/show.png";
 function Login() {
-  const [tog,settog]=useState(false)
-  function handletoggle()
-  {
-    settog(!tog)
+  const [tog, settog] = useState(false);
+  function handletoggle() {
+    settog(!tog);
   }
   return (
     <section className="flex items-center justify-center w-full min-h-screen sm:flex-row flex-col">
@@ -17,7 +16,9 @@ function Login() {
         id="Imageblock"
         className="sm:h-full sm:w-1/2 lg:w-1/2  flex items-center justify-center w-full p-5 h-1/2"
       >
-        <div className=" w-full h-full flex items-center justify-center bg-gray-100 p-2 rounded-lg"><img src={Img1} alt="Illustration" className="max-h-full w-auto" /></div>
+        <div className=" w-full h-full flex items-center justify-center bg-gray-100 p-2 rounded-lg">
+          <img src={Img1} alt="Illustration" className="max-h-full w-auto" />
+        </div>
       </div>
 
       <div
@@ -61,37 +62,82 @@ function Login() {
           </svg>
         </div>
 
-        <h2 className=" mt-4 font-thin text-3xl text-gray-600">Welcome to Vuexy!👋</h2>
-        <p className=" text-sm mt-2 mb-6 font-thin text-gray-600">Please sign-in to your account and start the adventure</p>
+        <h2 className=" mt-4 font-thin text-3xl text-gray-600">
+          Welcome to Vuexy!👋
+        </h2>
+        <p className=" text-sm mt-2 mb-6 font-thin text-gray-600">
+          Please sign-in to your account and start the adventure
+        </p>
 
         <form action="#" className=" flex items-left flex-col gap-y-2">
-          <label htmlFor="Username" className=" text-gray-700  font-medium">Email or Username</label>
-          <input type="text" placeholder="Enter your email or username" className=" py-2 ps-2 rounded-sm"/>
+          <label htmlFor="Username" className=" text-gray-700  font-medium">
+            Email or Username
+          </label>
+          <input
+            type="text"
+            placeholder="Enter your email or username"
+            className=" py-2 ps-2 rounded-sm border border-gray-400"
+          />
           <div className="flex items-center justify-between">
-            <label htmlFor="Password" className=" text-gray-700  font-medium">Password</label>
+            <label htmlFor="Password" className=" text-gray-700  font-medium">
+              Password
+            </label>
             <label htmlFor="Password" className=" text-main cursor-pointer">
               Forgot Password?
             </label>
           </div>
-          <div className=" relative"><input type={tog?'text':'password'} className=" py-2 ps-2 rounded-sm w-full " placeholder="Enter Your Password" /><span className=" absolute right-2 top-3 mb-2 cursor-pointer" onClick={()=>handletoggle()}><img src={tog?show:hide} alt="Show" /></span></div>
-          <div ><input type="checkbox" name="checkbox" id="checkbox" />
-          <label htmlFor="checkbox" className=" ms-2 text-gray-700  font-medium">Remember Me</label></div>
-          <button className="mt-6 border  bg-main py-2 rounded-lg text-white font-thin tracking-wide hover:text-black transition-colors">Sing in</button>
+          <div className=" relative">
+            <input
+              type={tog ? "text" : "password"}
+              className=" py-2 ps-2 rounded-sm w-full border border-gray-400"
+              placeholder="Enter Your Password"
+            />
+            <span
+              className=" absolute right-2 top-3 mb-2 cursor-pointer"
+              onClick={() => handletoggle()}
+            >
+              <img src={tog ? show : hide} alt="Show" />
+            </span>
+          </div>
+          <div>
+            <input type="checkbox" name="checkbox" id="checkbox" />
+            <label
+              htmlFor="checkbox"
+              className=" ms-2 text-gray-700  font-medium cursor-pointer"
+            >
+              Remember Me
+            </label>
+          </div>
+          <button className="mt-6 border  bg-main py-2 rounded-lg text-white font-thin tracking-wide hover:text-black transition-colors">
+            Sing in
+          </button>
           <p className=" mt-2 font-thin text-center ">
             New on our platform ?
-            <span className="ms-2 text-main font-medium cursor-pointer ">Create an account</span>
+            <span className="ms-2 text-main font-medium cursor-pointer ">
+              Create an account
+            </span>
           </p>
           <br />
-          <div className=" flex items-center justify-between"><span className=" border border-gray-500 w-full"></span><span className=" mx-4 text-gray-700 tracking-wide ">or</span><span className=" border border-gray-500 w-full"></span></div>
+          <div className=" flex items-center justify-between">
+            <span className=" border border-gray-500 w-full"></span>
+            <span className=" mx-4 text-gray-700 tracking-wide ">or</span>
+            <span className=" border border-gray-500 w-full"></span>
+          </div>
         </form>
-        <div className=" flex w-full mt-8 items-center justify-center gap-x-4"><div className=" bg-fb p-2 rounded-sm"><img src={Img2} alt="" /></div>
-        <div className=" bg-GG p-2 rounded-sm"><img src={Img3} alt="Google" /></div>
-        <div className=" bg-Tw p-2 rounded-sm"><img src={Img4} alt="twitter" /></div></div>
-        <button
-  className="fixed bottom-2 right-10 px-2 py-1 shadow-custom bg-shadow rounded-sm z-10 hover:bg-red-500 hover:text-white hover:border-red-500 "
->
-  Book Now
-</button>
+        <div className=" flex w-full mt-8 items-center justify-center gap-x-4">
+          <div className=" bg-fb p-2 rounded-sm">
+            <img src={Img2} alt="" />
+          </div>
+          <div className=" bg-GG p-2 rounded-sm">
+            <img src={Img3} alt="Google" />
+          </div>
+          <div className=" bg-Tw p-2 rounded-sm">
+            <img src={Img4} alt="twitter" />
+          </div>
+        </div>
+        <button className="fixed bottom-2 right-10 px-2 py-1 shadow-custom bg-shadow rounded-sm z-10 hover:bg-red-500 hover:text-white hover:border-red-500 ">
+          Book Now
+        </button>
       </div>
     </section>
   );

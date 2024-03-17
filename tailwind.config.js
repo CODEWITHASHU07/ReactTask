@@ -11,7 +11,9 @@ export default {
         'fb':'#E0E4EF',
         'GG':'#FAE2DF',
         'Tw':'#DBF0FD',
-        'shadow':'#ea5455'
+        'shadow':'#ea5455',
+        "Homebg":"#F8F7FA",
+        'navbg':'#FFFFFF'
       },
       boxShadow: {
         'custom': '0 1px 20px 1px #ea5455',
