@@ -5,9 +5,9 @@ import "./graph.css";
 function Graphfirst() {
   return (
     <div className=" bg-main rounded shadow-2xl" id="maingraphEarth">
-      <div className="grid grid-cols-1 sm:grid-cols-2 sm:grid-rows-2 lg:place-items-center sm:p-6 sm:pe-2 grid-rows-3 place-items-center ">
-        <div className="lg:col-span-1 sm:col-span-1 lg:row-span-1 row-start-1 row-end-2">
-          <h5 className="text-white mb-0 text-start text-xl">
+      <div className="grid grid-cols-1 sm:grid-cols-2 sm:grid-rows-2 lg:place-items-center sm:p-6 sm:pe-2 grid-rows-3 sm:place-items-center p-6">
+        <div className="lg:col-span-1 sm:col-span-1 lg:row-span-1 row-start-1 row-end-2 w-full">
+          <h5 className="text-white mb-0 text-2xl">
             Website Analytics
           </h5>
           <small className=" text-slate-50 text-sm">
@@ -43,12 +43,13 @@ function Graphfirst() {
             </div>
           </div>
         </div>
-        <div className="lg:col-start-2 lg:col-end-3 lg:row-start-1 lg:row-end-3 sm:col-span-1 my-4 sm:my-0 flex items-center justify-center row-start-2 row-end-2 col-start-1 col-end-2 place-items-center">
+        <div className="lg:col-start-2 lg:col-end-3 lg:row-start-1 lg:row-end-3 sm:col-start-2  sm:my-0 sm:row-start-1 sm:row-end-3 row-start-2 row-end-2 col-start-1 col-end-2  w-full h-full flex items-center justify-center sm:mb-0 -mt-4">
           <img
             src={Img1}
             alt="Website Analytics"
-            width="170"
-            className="card-website-analytics-img"
+            width={160}
+           
+            
           />
         </div>
       </div>

@@ -9,10 +9,13 @@ import Graph3 from "./Graph3";
 
 function Home() {
   return (
-    <main className=" bg-Homebg sm:p-8 sm:pb-0 p-2">
+    <main className=" bg-Homebg sm:p-8 px-2 py-4">
       <Topbar />
       {/* <Graphfirst/> */}
-      <div id="Main" className="grid lg:grid-rows-2 lg:grid-cols-2 gap-4 mt-4 sm:grid-cols-1 sm:grid-rows-4 grid-cols-1  grid-rows-5 grid-flow-row">
+      <div
+        id="Main"
+        className="grid lg:grid-rows-2 lg:grid-cols-2 gap-4 mt-4 sm:grid-cols-1 sm:grid-rows-4 grid-cols-1 grid-rows-4"
+      >
         <div
           id="Graph1"
           className=" sm:row-start-1 sm:row-end-2 lg:col-start-1 lg:col-end-2 sm:row-star-1 sm:col-start-1 sm:col-end-4 col-start-1 row-start-1 row-end-2"
@@ -26,7 +29,7 @@ function Home() {
         >
           <div
             id="inner1"
-            className=" h-full sm:w-full bg-card flex items-start justify-center shadow-2xl rounded-sm flex-col sm:py-6 sm:px-6 lg:px-4 px-8 py-2 w-4/5 m-auto "
+            className=" h-full sm:w-full bg-card flex items-start justify-center shadow-2xl rounded-sm flex-col sm:py-6 sm:px-6 lg:px-4 px-8 py-2 w-4/5 mx-auto "
           >
             <p className=" flex items-center justify-between w-full">
               <span className="text-slate-500">Sales Overview</span>
@@ -74,7 +77,7 @@ function Home() {
           </div>
           <div
             id="inner2"
-            className=" h-full  sm:w-full flex flex-col items-start justify-center sm:px-4 shadow-2xl rounded-sm bg-card px-4 py-1 w-4/5 m-auto"
+            className=" h-full  sm:w-full flex flex-col items-start justify-center sm:px-4 shadow-2xl rounded-sm bg-card px-4 py-1 w-4/5 mx-auto"
           >
             <div className="h-8 w-8 rounded-3xl bg-green-200 flex items-center justify-center p-2">
               <img src={Img3} className=" w-full" />
@@ -85,15 +88,15 @@ function Home() {
         </div>
         <div
           id="Graph3"
-          className=" bg-card lg:row-start-2 lg:row-end-3 sm:col-start-1 sm:col-end-2 sm:row-start-3 sm:row-end-4 row-start-3 row-end-4 col-start-1 col-end-2 px-8 py-4 min-w-4/5 m-auto sm:px-8 rounded-sm shadow-2xl"
+          className=" bg-card lg:row-start-2 lg:row-end-3 sm:col-start-1 sm:col-end-2 sm:row-start-3 sm:row-end-4 row-start-3 row-end-3 col-start-1 col-end-2 px-8 py-4 min-w-4/5 mx-auto sm:px-8 rounded-sm shadow-2xl mt-0 w-full"
         >
-          <Graph2/>
+          <Graph2 />
         </div>
         <div
           id="Graph4"
-          className=" bg-card lg:row-start-2 lg:row-end-3 lg:col-start-2 lg:col-end-3 sm:row-start-4 sm:row-end-5 sm:col-start-1 sm:col-end-2 row-start-4 row-end-5 col-start-1 colr-end-2 px-8 py-2 min-w-4/5 m-auto rounded-sm shadow-2xl sm:px-8 sm:py-4"
+          className=" bg-card lg:row-start-2 lg:row-end-3 lg:col-start-2 lg:col-end-3 sm:row-start-4 sm:row-end-5 sm:col-start-1 sm:col-end-2 row-start-4 row-end-5 col-start-1 col-end-3 px-8 py-2 w-full mx-auto rounded-sm shadow-2xl sm:px-8 mt-0 sm:py-4"
         >
-          <Graph3/>
+          <Graph3 />
         </div>
       </div>
     </main>
