@@ -13,7 +13,10 @@ export default {
         'Tw':'#DBF0FD',
         'shadow':'#ea5455',
         "Homebg":"#F8F7FA",
-        'navbg':'#FFFFFF'
+        'navbg':'#FFFFFF',
+        "line1":"#00CFE8",
+        "text":"#5D596C",
+        "card":'#FFFFFF'
       },
       boxShadow: {
         'custom': '0 1px 20px 1px #ea5455',

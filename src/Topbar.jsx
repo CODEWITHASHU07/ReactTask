@@ -9,7 +9,7 @@ import Img7 from "../Images/Language.png";
 import Arrow from "../Images/arrow.png"
 // !------------------------
 import Imagesidebar1 from "../Images/dash.png"
-import Imagesidebar2 from "../Images/layout.png"
+import Imagesidebar2 from "../Images/Pagelayout.png"
 import Imagesidebar3 from "../Images/page.png"
 import Imagesidebararrow from "../Images/next.png"
 // !--Apps
@@ -43,14 +43,14 @@ function Topbar() {
   {
     setshowinput(!showinput)
   }
-  const[showsidebar,setshowsidebar]=useState(true)
+  const[showsidebar,setshowsidebar]=useState(false)
   function Handlesidebar()
   {
     setshowsidebar(!showsidebar)
   }
   return (
     <>
-      <nav className=" max-w-full sm:mx-8  mt-4 flex items-center justify-between bg-navbg rounded-2xl py-2 px-2 relative min-w-max">
+      <nav className=" w-full  flex items-center justify-between bg-navbg rounded-2xl py-2 px-2 relative min-w-max">
         {console.log(showinput,showsidebar)}
         <div
           className="flex items-center justify-between gap-x-2"

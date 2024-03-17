@@ -1,0 +1,12 @@
+.bgsection {
+  background: #6258cc;
+  border-radius: 0.3rem;
+  padding: 2px;
+
+  color: snow;
+}
+#maingraphEarth {
+  color: snow;
+  padding-inline-start: 1.5rem;
+  min-width: 290px;
+}
