@@ -5,6 +5,7 @@
     display: block;
     height: 22px;
     cursor: pointer;
+    margin-inline: 2px;
     
 }
 #Topbarleft span >img,#Topbarright span >img,#seacrh>img
@@ -34,12 +35,13 @@ nav
 #sidebar
 {
     min-width: 240px;
-    position: absolute;
+    position: fixed;
     left: 0;
     background: rgb(229, 230, 233);
     top: 0;
     min-height: 100vh;
     z-index: 30;
+    padding-bottom: 1rem;
 }
 
 

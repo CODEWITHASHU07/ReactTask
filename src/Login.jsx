@@ -11,7 +11,7 @@ function Login() {
     settog(!tog);
   }
   return (
-    <section className="flex items-center justify-center w-full min-h-screen sm:flex-row flex-col">
+    <section className="flex items-center justify-center w-full min-h-screen sm:flex-row flex-col ">
       <div
         id="Imageblock"
         className="sm:h-full sm:w-1/2 lg:w-1/2  flex items-center justify-center w-full p-5 h-1/2"
@@ -23,7 +23,7 @@ function Login() {
 
       <div
         id="LoginPage"
-        className="sm:h-full sm:w-1/2 lg:w-1/2  w-full h-1/2 flex flex-col justify-start px-16 py-6  bg-neutral-50"
+        className="sm:h-full sm:w-1/2 lg:w-1/2  w-full h-1/2 flex flex-col justify-start px-16 py-6   bg-navbg"
       >
         <div id="icon">
           <svg
@@ -111,7 +111,7 @@ function Login() {
           <button className="mt-6 border  bg-main py-2 rounded-lg text-white font-thin tracking-wide hover:text-black transition-colors">
             Sing in
           </button>
-          <p className=" mt-2 font-thin text-center ">
+          <p className=" mt-2 font-thin text-center text-gray-700 ">
             New on our platform ?
             <span className="ms-2 text-main font-medium cursor-pointer ">
               Create an account
@@ -119,19 +119,19 @@ function Login() {
           </p>
           <br />
           <div className=" flex items-center justify-between">
-            <span className=" border border-gray-500 w-full"></span>
-            <span className=" mx-4 text-gray-700 tracking-wide ">or</span>
-            <span className=" border border-gray-500 w-full"></span>
+            <span className=" border border-gray-400 w-full"></span>
+            <span className=" mx-4 text-gray-700 tracking-wider ">or</span>
+            <span className=" border border-gray-400 w-full"></span>
           </div>
         </form>
         <div className=" flex w-full mt-8 items-center justify-center gap-x-4">
-          <div className=" bg-fb p-2 rounded-sm">
+          <div className=" bg-fb p-2 rounded-xl cursor-pointer">
             <img src={Img2} alt="" />
           </div>
-          <div className=" bg-GG p-2 rounded-sm">
+          <div className=" bg-GG p-2 rounded-xl cursor-pointer">
             <img src={Img3} alt="Google" />
           </div>
-          <div className=" bg-Tw p-2 rounded-sm">
+          <div className=" bg-Tw p-2 rounded-xl cursor-pointer">
             <img src={Img4} alt="twitter" />
           </div>
         </div>
