@@ -6,11 +6,11 @@ import Img2 from "../Images/url.png";
 import Img3 from "../Images/cardcredit.png";
 import Graph2 from "./Graph2";
 import Graph3 from "./Graph3";
-import LineChartComponent from "./LineProject";
+import LineChartcomponent from "./LineProject";
 
 function Home() {
   return (
-    <main className=" bg-Homebg sm:p-8 px-2 py-4">
+    <main id="main" className=" sm:max-h-max bg-Homebg sm:p-8 px-2 py-4">
       <Topbar />
       {/* <Graphfirst/> */}
       <div
@@ -19,7 +19,7 @@ function Home() {
       >
         <div
           id="Graph1"
-          className=" sm:row-start-1 sm:row-end-2 lg:col-start-1 lg:col-end-2 sm:row-star-1 sm:col-start-1 sm:col-end-4 col-start-1 row-start-1 row-end-2"
+          className=" sm:row-start-1 sm:row-end-2 lg:col-start-1 lg:col-end-2 sm:row-star-1 sm:col-start-1 sm:col-end-4 col-start-1 row-start-1 row-end-2 h-full"
         >
           <Graphfirst />
         </div>
@@ -30,7 +30,7 @@ function Home() {
         >
           <div
             id="inner1"
-            className=" h-full sm:w-full bg-card flex items-start justify-center shadow-2xl rounded-sm flex-col sm:py-6 sm:px-6 lg:px-4 px-8 py-2 w-4/5 mx-auto "
+            className=" h-full sm:w-full bg-card flex items-start justify-center shadow-2xl rounded-sm flex-col sm:py-0 sm:px-6 lg:px-4 px-8 py-2 w-4/5 mx-auto lg:justify-center lg:gap-y-4"
           >
             <p className=" flex items-center justify-between w-full">
               <span className="text-slate-500">Sales Overview</span>
@@ -41,7 +41,7 @@ function Home() {
             </h2>
             <div
               id="innercompare"
-              className="flex items-start justify-between relative  w-full"
+              className="flex items-start justify-between relative w-full "
             >
               <div className="border-e-2  border-gray-200  w-full flex items-start flex-col pe-5">
                 <span className="flex ">
@@ -78,14 +78,15 @@ function Home() {
           </div>
           <div
             id="inner2"
-            className=" h-full  sm:w-full flex flex-col items-start justify-center sm:px-4 shadow-2xl rounded-sm bg-card px-4 py-0 w-4/5 mx-auto"
+            className=" h-full sm:w-full flex flex-col items-start justify-between shadow-2xl rounded-sm bg-card w-4/5 mx-auto pt-8 pb-2"
           >
-            <div className="h-8 w-8 rounded-3xl bg-green-200 flex items-center justify-center p-2">
+            <div className=" sm:px-4 px-4 flex flex-col items-start justify-between gap-y-2"><div className="h-8 w-8 rounded-3xl bg-green-200 flex items-center justify-center p-2 mt-6">
               <img src={Img3} className=" w-full" />
             </div>
-            <h3 className=" mt-4 text-2xl text-black font-thin">97.5k</h3>
-            <p className=" mt-4 font-thin text-gray-700">Revenue Genrated</p>
-            <div className=" w-full m-0 bg-green-50  rounded-2xl max-h-40"><LineChartComponent/></div>
+            <h3 className=" mt-1 text-2xl text-black font-thin">97.5k</h3>
+            <p className=" mt-0 font-thin text-gray-700">Revenue Genrated</p></div>
+            <div className=" w-full h-40 m-0 bg-green-50 rounded-2xl max-h-40">
+              <LineChartcomponent/></div>
           </div>
           
         </div>
@@ -97,7 +98,7 @@ function Home() {
         </div>
         <div
           id="Graph4"
-          className=" bg-card lg:row-start-2 lg:row-end-3 lg:col-start-2 lg:col-end-3 sm:row-start-4 sm:row-end-5 sm:col-start-1 sm:col-end-2 row-start-4 row-end-5 col-start-1 col-end-3 px-8 py-2 w-full mx-auto rounded-sm shadow-2xl sm:px-8 mt-0 sm:py-4"
+          className=" bg-card lg:row-start-2 lg:row-end-3 lg:col-start-2 lg:col-end-3 sm:row-start-4 sm:row-end-5 sm:col-start-1 sm:col-end-2 row-start-4 row-end-5 col-start-1 col-end-3 px-8 py-2 w-full mx-auto rounded-sm shadow-2xl sm:px-8 mt-0 sm:py-2"
         >
           <Graph3 />
         </div>

@@ -32,16 +32,15 @@ client
 
     app.post("/api/login", async (req, res) => {
       try {
-        const { username, password } = req.body;
-        console.log(username, password);
-        // password=parseInt(password);     
+        let { username, password } = req.body;
+        password=password.toString();
+        console.log(username,password);
+        
          const user = await db
           .collection("UserInformation")
-          .findOne({ username, password });
-          console.log(user,"data");
-          
+          .findOne({  "Password":password,"Name":username });
+          console.log(user);
         if (user) {
-
           res.json({ message: "Login successful" });
         } else {
           res.status(401).json({ error: "Invalid username or password" });

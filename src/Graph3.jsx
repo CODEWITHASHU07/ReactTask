@@ -1,5 +1,6 @@
 import React from 'react'
 import Img1 from "../Images/ticket.png"
+import Img2 from "../Images/pie.png"
 function Graph3(){
  return (
 <>
@@ -13,7 +14,7 @@ function Graph3(){
         <h5 className=' text-sm text-gray-500 mt-3'>Total Tickets</h5>
        <div className=' flex items-center justify-center  gap-x-3 py-2'><span className=' px-3 py-1 bg-green-100 '><img className=' w-6 h-6' src={Img1} alt="" /></span><div><h4 className=' text-gray-600 text-sm'>New Tickets</h4><p className=' text-gray-400 text-base'>142</p></div></div>
     </div>
-    <div>Graph</div>
+    <div className=' bg-transparent flex items-center justify-center '><img src={Img2} className='h-60 object-contain ' alt="Graph" /></div>
 </div>
 </>
 )

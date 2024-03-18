@@ -1,30 +1,29 @@
 import React from 'react';
 import { LineChart, Line, ResponsiveContainer } from 'recharts';
-import "./LineChartWithShadow.css"; // Import the CSS file
 
 const data = [
   { name: 'Mon', uv: 10 },
-  { name: 'Tue', uv: 14 },
-  { name: 'Wed', uv: 16 },
-  { name: 'Thu', uv: 12 },
-  { name: 'Fri', uv: 22 },
-  { name: 'Sat', uv: 18 },
-  { name: 'Sun', uv: 28 },
+  { name: 'Tue', uv: 20 },
+  { name: 'Wed', uv: 15 },
+  { name: 'Thu', uv: 13 },
+  { name: 'Fri', uv: 30 },
+  { name: 'Sat', uv: 17 },
+  { name: 'Sun', uv: 25 },
 ];
 
-const LineChartComponent = () => {
+const LineChartcomponent = () => {
   return (
-    <div className="card h-full object-contain">
-      <ResponsiveContainer width="100%" height="100%">
+    <div className=' h-full w-full'>
+      <ResponsiveContainer>
         <LineChart
           data={data}
-          margin={{ top: 5, right: 0, left: 10, bottom: -80 }}
+          margin={{ top: 35, right: 2, left: 2, bottom: -80 }} 
         >
-          <Line type="monotone" dataKey="uv" stroke="#28C76F" strokeWidth={3} dot={false} />
+          <Line type="monotone" dataKey="uv" stroke="#28C76F" strokeWidth={2} dot={false} />
         </LineChart>
       </ResponsiveContainer>
     </div>
   );
 };
 
-export default LineChartComponent;
+export default LineChartcomponent;

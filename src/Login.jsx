@@ -32,6 +32,7 @@ function Login({setLoginStatus}) {
             setLoginStatus(true);
         } else {
             console.error("Error:", response.statusText);
+            alert("User Not Found!")
             setLoginStatus(false);
         }
     } catch (error) {

@@ -4,8 +4,8 @@ import "./graph.css";
 
 function Graphfirst() {
   return (
-    <div className=" bg-main rounded shadow-2xl" id="maingraphEarth">
-      <div className="grid grid-cols-1 sm:grid-cols-2 sm:grid-rows-2 lg:place-items-center sm:p-6 sm:pe-2 grid-rows-3 sm:place-items-center p-6">
+    <div className=" bg-main h-full rounded shadow-2xl" id="maingraphEarth">
+      <div className="grid grid-cols-1 sm:grid-cols-2 sm:grid-rows-2 lg:place-items-center sm:p-6 sm:pe-2 grid-rows-3 sm:place-items-center sm:gap-y-1/4 p-6">
         <div className="lg:col-span-1 sm:col-span-1 lg:row-span-1 row-start-1 row-end-2 w-full">
           <h5 className="text-white mb-0 text-2xl">
             Website Analytics
@@ -48,8 +48,6 @@ function Graphfirst() {
             src={Img1}
             alt="Website Analytics"
             width={160}
-           
-            
           />
         </div>
       </div>
