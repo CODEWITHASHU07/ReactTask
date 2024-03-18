@@ -2,17 +2,18 @@ import { useState } from 'react'
 import './App.css'
 import Login from './Login'
 import Home from './Home'
-import Chart from './Chart'
 
 function App() {
-  const [count, setCount] = useState(0)
+ 
+  let [LoginStatus, setLoginStatus] = useState(false)
 
   return (
     <>
-      
-     {/* <Login/> */}
-     {/* <Home/> */}
-     <Chart/>
+
+       {
+         LoginStatus?<Home/> : <Login setLoginStatus= {setLoginStatus} /> 
+       }
+     
     </>
   )
 }

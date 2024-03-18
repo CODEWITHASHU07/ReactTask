@@ -1,4 +1,5 @@
 import React from "react";
+import Barchart from "./Barchart";
 function Graph2() {
   return (
     <>
@@ -16,7 +17,9 @@ function Graph2() {
             You informed of this week compared to last week
           </p>
         </div>
-        <div>graph</div>
+        <div className=" lg:w-3/4">
+          <Barchart />
+        </div>
       </div>
     </>
   );

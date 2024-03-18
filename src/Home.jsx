@@ -6,6 +6,7 @@ import Img2 from "../Images/url.png";
 import Img3 from "../Images/cardcredit.png";
 import Graph2 from "./Graph2";
 import Graph3 from "./Graph3";
+import LineChartComponent from "./LineProject";
 
 function Home() {
   return (
@@ -25,7 +26,7 @@ function Home() {
 
         <div
           id="Graph2"
-          className="bg-transparent lg:row-start-1 lg:row-end-2 lg:col-start-2 lg:col-end-3 sm:col-start-1 sm:col-end-4 sm:row-start-2 sm:row-end-3 sm:flex sm:items-center gap-x-4 sm:flex-row flex-col flex items-center gap-y-4 row-start-2 row-end-3 bg-red-400"
+          className="bg-transparent lg:row-start-1 lg:row-end-2 lg:col-start-2 lg:col-end-3 sm:col-start-1 sm:col-end-4 sm:row-start-2 sm:row-end-3 sm:flex sm:items-center gap-x-4 sm:flex-row flex-col flex items-center gap-y-4 row-start-2 row-end-3 py-0"
         >
           <div
             id="inner1"
@@ -77,14 +78,16 @@ function Home() {
           </div>
           <div
             id="inner2"
-            className=" h-full  sm:w-full flex flex-col items-start justify-center sm:px-4 shadow-2xl rounded-sm bg-card px-4 py-1 w-4/5 mx-auto"
+            className=" h-full  sm:w-full flex flex-col items-start justify-center sm:px-4 shadow-2xl rounded-sm bg-card px-4 py-0 w-4/5 mx-auto"
           >
             <div className="h-8 w-8 rounded-3xl bg-green-200 flex items-center justify-center p-2">
               <img src={Img3} className=" w-full" />
             </div>
             <h3 className=" mt-4 text-2xl text-black font-thin">97.5k</h3>
             <p className=" mt-4 font-thin text-gray-700">Revenue Genrated</p>
+            <div className=" w-full m-0 bg-green-50  rounded-2xl max-h-40"><LineChartComponent/></div>
           </div>
+          
         </div>
         <div
           id="Graph3"

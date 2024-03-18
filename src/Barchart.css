@@ -1,0 +1,26 @@
+.card {
+  background-color: transparent;
+  border-radius: 15px;
+  padding: 0px;
+  min-width: 200px;
+  height: 280px;
+  margin: 0;
+
+}
+
+/* BarChartWithBorderRadius.css */
+
+
+
+.custom-bar .bar-30 {
+    fill: #7a6efd; 
+  }
+  
+
+  .custom-bar .bar-20,.bar-10,.bar-13,.bar-17,.bar-25,.bar-15{
+    fill: #7a6efd;
+    opacity: 0.40; 
+  }
+  
+ 
+  

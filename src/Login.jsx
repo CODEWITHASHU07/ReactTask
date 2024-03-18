@@ -5,11 +5,41 @@ import Img3 from "../Images/Google.png";
 import Img4 from "../Images/Twitter.png";
 import hide from "../Images/hide.png";
 import show from "../Images/show.png";
-function Login() {
+import axios from 'axios';
+
+function Login({setLoginStatus}) {
   const [tog, settog] = useState(false);
   function handletoggle() {
     settog(!tog);
   }
+  async function handleForm(e) {
+    e.preventDefault();
+    const username = e.target[0].value;
+    const password = e.target[1].value;
+    console.log(username,password);
+    try {
+        const response = await fetch("http://localhost:7500/api/login", {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ username, password }),
+        });
+
+        if (response.ok) {
+            const data = await response.json();
+            console.log("Response:", data);
+            setLoginStatus(true);
+        } else {
+            console.error("Error:", response.statusText);
+            setLoginStatus(false);
+        }
+    } catch (error) {
+        console.error("Error:", error.message);
+        setLoginStatus(false);
+    }
+}
+
   return (
     <section className="flex items-center justify-center w-full min-h-screen sm:flex-row flex-col ">
       <div
@@ -69,7 +99,7 @@ function Login() {
           Please sign-in to your account and start the adventure
         </p>
 
-        <form action="#" className=" flex items-left flex-col gap-y-2">
+        <form action="" className=" flex items-left flex-col gap-y-2" onSubmit={(e)=>handleForm(e)}>
           <label htmlFor="Username" className=" text-gray-700  font-medium">
             Email or Username
           </label>
@@ -77,7 +107,7 @@ function Login() {
             type="text"
             placeholder="Enter your email or username"
             className=" py-2 ps-2 rounded-sm border border-gray-400"
-          />
+          required/>
           <div className="flex items-center justify-between">
             <label htmlFor="Password" className=" text-gray-700  font-medium">
               Password
@@ -91,7 +121,7 @@ function Login() {
               type={tog ? "text" : "password"}
               className=" py-2 ps-2 rounded-sm w-full border border-gray-400"
               placeholder="Enter Your Password"
-            />
+            required/>
             <span
               className=" absolute right-2 top-3 mb-2 cursor-pointer"
               onClick={() => handletoggle()}
